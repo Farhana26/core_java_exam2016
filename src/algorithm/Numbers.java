@@ -17,8 +17,9 @@ public class Numbers {
 		for(int i=0; i<num.length; i++){
 			
 		num[i] = rand.nextInt(1000000);
-			
+
 		}
+		int maximum =num[0];
 
 		//Selection Sort
 		Sort algo = new Sort();
@@ -32,7 +33,14 @@ public class Numbers {
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//Continue for rest of the Sorting Algorithm....
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + bubbleSortExecutionTime + " milli sec");
+
+		algo.bucketSort(num,maximum);
+		long bucketSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + bucketSortExecutionTime + " milli sec");
 
 	}
-
 }
+

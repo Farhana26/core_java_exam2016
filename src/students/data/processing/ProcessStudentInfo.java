@@ -1,9 +1,17 @@
 package students.data.processing;
 
+import jdk.internal.org.xml.sax.XMLReader;
 import org.xml.sax.SAXException;
+import org.xml.sax.XMLFilter;
 
+import javax.sql.RowSetInternal;
+import javax.sql.rowset.WebRowSet;
+import javax.sql.rowset.spi.XmlReader;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.io.Reader;
+import java.sql.SQLException;
+import java.util.*;
 
 public class ProcessStudentInfo {
 
@@ -33,15 +41,24 @@ public class ProcessStudentInfo {
 				String tag = "id";
 				
 				//Declare a Map with List<String> into it.
-				
+				Map<String,List<String>> map = new LinkedHashMap<>();
+				List<String> qtp = new ArrayList<>();
+				List<String> selenium = new ArrayList<>();
+				qtp.add(pathQtp);
+				selenium.add(pathSelenium);
+
 				
 				/*Declare 2 ArrayList with Student data type to store Selenium student into one of the ArrayList and
 				  Qtp student into another ArrayList. */
-				
+
+				xml.parser.XmlReader xmreader = new xml.parser.XmlReader();
+
 				
 				
 				//Create XMLReader object.
-				
+
+
+
 				//Parse Data using parseData method and then store data into Selenium ArrayList.
 				
 				//Parse Data using parseData method and then store data into Qtp ArrayList.

@@ -1,21 +1,58 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
+we need data structure for easy implementation of the operation like inserting, deleteing,editing.
+sometime we have to deal with million of data. for better memory allocation and less compile time we need
+data structure.
+
 List out the areas in which data structures are applied extensively?
+
 what is an Array?
+An array is a container object that holds a fixed number of values of a single type.
 what is the difference between the Array and ArrayList?
+Array size is static, we cant change the size. Arraylist is dynamic, it will change the size of array automatically when needed.
+
 what is LinkedList?
+linkedList is also arraylist which has two field. one carries data and another carries the reference or address to the next node.
+
 what is queue?
+Queue is a data structure that follows the first in first out policy.
+
 what is stack?
+stack is a data structure that follows the last in first out policy.
+
 what is FIFO and LIFO?
+first in first out: it ll retrive the firts inserted data from the queue.
+last in first out: it ll retrive the last inserted data first from the stack.
+
 what is the order of complexity?
+order of complexity used to find out which algorithm is faster to compute.generally the smaller the order of
+complexity, faster it will run.
+
 what is the best case to search an element from an array?
+best case when the number of searching operation is minimum.that means the searching element is in the first location
+of an array. so the tim complexity will be O(1).
+
 what is the worst case to search an element from an array?
+worst case would be when the number of searching operation is maximum.that means the searching element is in the first location
+of an array. so the tim complexity will be O(n).
+
 what is tree in data structure?
+a tree is a widely used abstract data type (ADT). tree represent nodes connected by edges.
+
+
 what is graph in data structure?
+A graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points,
+together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
+
+
 what is the difference between the HashTable and HashMap?
+hashtables is synchronized but hasmap isnt.
+hashmap permit null value in it, hashtable doesnt.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
 How HashMap works in java?
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
 What are the different ways of copying an array into another array?
 What is difference between an array and a linked list?

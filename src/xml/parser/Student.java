@@ -1,5 +1,9 @@
 package xml.parser;
 
+import java.util.AbstractList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Student {
 
 	/*
@@ -9,9 +13,13 @@ public class Student {
 	public String lastName;
 	public String score;
 	public String id;
-	
+	List<Student> Student = new LinkedList<>();
+
+
+
 	@Override
-	public String toString(){
+	public String toString()
+	{
 		return "Student" + "("+"id= "+id+")"+ firstName+" "+lastName+" "+" Grade = "+score;
 	}
 	
